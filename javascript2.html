@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods in js</title>
+</head>
+<body>
+    <h1>Methods In Js</h1>
+    <p id="demo"></p>
+    <script>
+        var str = "Javascript is Easy"
+        document.write(str.toLowerCase())
+        document.write("<br>")
+        document.write(str.toUpperCase())
+        document.write("<br>")
+        document.write(str.startsWith("J"))
+        document.write("<br>")
+
+        var str2 = "I dont like python"
+        var patt = new RegExp("Li")
+        var res = patt.test(str)
+        document.write(res)
+
+        var vegetables = ["Broccoli", "Onion", "Ginger",
+        "Potato", "Cabbage"]
+             
+             for (i = 0; i < vegetables.length; i++){
+                var element = vegetables[i];
+                document.write(element)
+                document.write("<br>")
+             }   
+        var day;
+        switch (new Date().getDay()) {
+            case 0:
+             day = "Sunday";
+            Break;
+            case 1:
+             day = "Monday";
+            Break;
+            case 2:
+             day = "Tuesday";
+            Break;  
+            case 3:
+             day = "Wednesday";
+            Break; 
+            case 4:
+             day = "Thursday";
+            Break; 
+            case 5:
+             day = "Friday";
+            Break;
+            case 6:
+             day = "Saturday";       
+        }
+     document.getElementById("demo").innerHTML = "Today is" + day;
+        
+
+        
+    </script>
+</body>
+</html>
